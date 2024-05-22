@@ -6,11 +6,12 @@ categories: lecture
 ---
 
 # Outline
-{% highlight one %}
+
+```
 Relativistic QM: Klein – Gordon equation and its merit and demerit, Dirac equation,
 probabilities and current densities, Magnetic moment and spin of electron, free particle
 solution of Dirac equation and interpretation of negative energy states. 15 Lectures  
-{% endhighlight %}
+```
 
 # The Klein–Gordon Equation
 
