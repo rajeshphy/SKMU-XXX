@@ -59,18 +59,17 @@ footer p {
 /* Code Blocks */
 pre, code {
   background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  border-radius: 6px;
+  padding: 5px;
+  font-family: 'Times New Roman', Courier, monospace;
   color: #333;
 }
 
 /* Highlighted Code Blocks */
 .highlight {
   background: #f4f4f4;
-  color: #333;
-  padding: 10px;
+  color: black;
+  padding: 1px;
   border-radius: 4px;
   overflow: auto;
 }
