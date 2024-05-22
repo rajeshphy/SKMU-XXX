@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Topics for PG-II"
+date:   2024-05-18 18:47:26 +0530
+categories: lecture
+---
+
+For syllabus visit website [SKMU](https://skmu.ac.in)
+
+# PHY C-06 Unit-2
+{% highlight one %}
+Relativistic QM: Klein – Gordon equation and its merit and demerit, Dirac equation,
+probabilities and current densities, Magnetic moment and spin of electron, free particle
+solution of Dirac equation and interpretation of negative energy states. 15 Lectures  
+{% endhighlight %}
+
+# PHY C-07 Unit-5
+{% highlight two %}
+Basic principles and different LASER’s: principles and working of Ruby Laser, He-Ne Laser
+Solid state laser, semiconductor laser CO2 LASER and qualitative description of longitudinal
+and TE- LASER systems, Excimer LASER, Dye LASER, Roman LASER, Plasma recombination
+LASER. 09 Lectures
+{% endhighlight %}
