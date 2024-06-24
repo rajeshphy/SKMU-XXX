@@ -121,18 +121,11 @@ $$ \beta^2 = I $$
 
 Substituting these back, we get:
 
-$$ \left( - \hbar^2 \frac{\partial^2}{\partial t^2} + \hbar^2 \nabla^2 - m^2 \right) \psi = 0 $$
+$$ \left( \hbar^2 \frac{\partial^2}{\partial t^2} - \hbar^2 \nabla^2 + m^2 \right) \psi = 0 $$
 
 This reduces to the Klein-Gordon equation, showing that our linear equation is consistent.
 
 #### Explicit Form of Dirac Matrices
-The matrices $$ \alpha $$ and $$ \beta $$ must satisfy the following conditions:
-
-$$ \alpha_i \alpha_j + \alpha_j \alpha_i = 2 \delta_{ij} I $$
-
-$$ \alpha_i \beta + \beta \alpha_i = 0 $$
-
-$$ \beta^2 = I $$
 
 One common representation of these matrices is the Dirac-Pauli representation:
 
