@@ -178,6 +178,58 @@ where:
 
 This is the Dirac equation, describing spin-1/2 particles in relativistic quantum mechanics.
 
+### Footnote: Step by step expansion of the Equation $$\left( \alpha \cdot \mathbf{p} + \beta m \right)^2$$
+
+Starting from:
+$$ \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 $$
+
+We can expand it as follows:
+$$ \left( \alpha \cdot \mathbf{p} + \beta m \right) \left( \alpha \cdot \mathbf{p} + \beta m \right) $$
+
+Distribute the terms:
+$$ = (\alpha \cdot \mathbf{p}) (\alpha \cdot \mathbf{p}) + (\alpha \cdot \mathbf{p}) (\beta m) + (\beta m) (\alpha \cdot \mathbf{p}) + (\beta m) (\beta m) $$
+
+We handle each term individually:
+
+1. **First Term:**
+   $$ (\alpha \cdot \mathbf{p}) (\alpha \cdot \mathbf{p}) = \alpha_i p_i \alpha_j p_j $$
+   
+2. **Second Term:**
+   $$ (\alpha \cdot \mathbf{p}) (\beta m) = \alpha_i p_i \beta m $$
+   
+3. **Third Term:**
+   $$ (\beta m) (\alpha \cdot \mathbf{p}) = \beta m \alpha_j p_j $$
+   
+4. **Fourth Term:**
+   $$ (\beta m)(\beta m) = \beta^2 m^2 $$
+
+Combining these results:
+$$ \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 = \alpha_i p_i \alpha_j p_j + \alpha_i p_i \beta m + \beta m \alpha_j p_j + \beta^2 m^2 $$
+
+Using these commutation relations, we can simplify the terms:
+
+1. **First Term:**
+   $$ \alpha_i p_i \alpha_j p_j = p_i p_j (\alpha_i \alpha_j) = p_i p_j \left( \delta_{ij} I + \alpha_j \alpha_i \right) = p_i p_i I = \mathbf{p}^2 I $$
+
+2. **Second Term:**
+   $$ \alpha_i p_i \beta m = p_i \alpha_i \beta m $$
+   
+   Using the commutation relation $$\alpha_i \beta = -\beta \alpha_i$$:
+   
+   $$ = p_i (-\beta \alpha_i) m = -\beta p_i \alpha_i m $$
+
+3. **Third Term:**
+   $$ \beta m \alpha_j p_j = \beta m p_j \alpha_j $$
+   
+   Using the commutation relation $$\beta \alpha_j = -\alpha_j \beta$$:
+   
+   $$ = -\alpha_j \beta m p_j = -\beta p_j \alpha_j m $$
+
+4. **Fourth Term:**
+   $$ \beta^2 m^2 = I m^2 = m^2 I $$
+
+
+
 #### Question 5: Find the plane wave solution to the Dirac equation and verify it satisfies the equation.
 
 <!--
