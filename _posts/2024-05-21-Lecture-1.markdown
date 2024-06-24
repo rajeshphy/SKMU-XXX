@@ -94,3 +94,96 @@ $$
 
 4. **Unbounded Hamiltonian:**
    - The Hamiltonian associated with the Klein-Gordon equation is not bounded from below, leading to stability issues and necessitating reinterpretation within the framework of quantum field theory.
+
+# Dirac Equation
+
+
+The Dirac equation was formulated to address the limitations of the Klein-Gordon equation, specifically to describe spin-1/2 particles and to ensure positive-definite probability densities.
+
+#### Linearizing the Klein-Gordon Equation
+The Klein-Gordon equation is given by:
+$$ \left( \frac{\partial^2}{\partial t^2} - \nabla^2 + m^2 \right) \psi = 0 $$
+
+To derive the Dirac equation, we seek a first-order differential equation in both space and time that would still be consistent with the principles of special relativity. We start with the assumption that the equation should be linear in the first derivatives:
+
+$$\color{red}{ i \hbar \frac{\partial \psi}{\partial t} = \left( \alpha \cdot \mathbf{p} + \beta m \right) \psi }$$
+
+Here, $$ \alpha $$ and $$ \beta $$ are matrices, and $$ \mathbf{p} = -i \hbar \nabla $$ is the momentum operator.
+
+#### Requirements for Matrices
+To ensure consistency with special relativity and the correct energy-momentum relation, we require that:
+
+$$ E^2 = \mathbf{p}^2 c^2 + m^2 c^4 $$
+
+Square both sides of our proposed equation and taking $$c=\hbar=1$$(natural units):
+
+$$ \left( i \frac{\partial}{\partial t} \right)^2 \psi = \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 \psi $$
+
+
+One common representation of dirac matrices $$\alpha,\;\beta$$ is the Dirac-Pauli representation:
+
+$$ \beta = \gamma^0 = \begin{pmatrix} I & 0 \\ 0 & -I \end{pmatrix} $$
+
+$$ \alpha_i = \gamma^0 \gamma^i $$
+
+where $$ \gamma^i $$ are the Dirac gamma matrices.
+
+
+```Highlighted section below can be skipped, its just for verification```
+<div style="background-color: #f0f0f0; padding: 10px;">
+Expanding the right-hand side, we get:
+
+$$ - \hbar^2 \frac{\partial^2 \psi}{\partial t^2} = \left( \alpha_i p_i \alpha_j p_j + \alpha_i p_i \beta m + \beta m \alpha_j p_j + \beta^2 m^2 \right) \psi $$
+
+Using the commutation relations of the matrices \( \alpha \) and \( \beta\)
+
+$$ \alpha_i \alpha_j + \alpha_j \alpha_i = 2 \delta_{ij} I $$
+
+$$ \alpha_i \beta + \beta \alpha_i = 0 $$
+
+$$ \beta^2 = I $$
+
+Substituting these back, we get:
+
+$$ \left(  \frac{\partial^2}{\partial t^2} -  \nabla^2 + m^2 \right) \psi = 0 $$
+
+This reduces to the Klein-Gordon equation, showing that our linear equation is consistent.
+</div>
+
+
+#### The Dirac Equation
+Combining all these and in natural units ($$ \hbar = c = 1 $$), we get the Dirac equation in the form:
+
+$$ i \frac{\partial \psi}{\partial t} = \left( \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m \right) \psi $$
+
+
+Rearranging the equation we get
+
+$$\left[i \frac{\partial }{\partial t} - \left( \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m \right) \right]\psi=0 $$
+
+Multiplying both sides by $$\beta$$ and using the relation $$\beta^2=I$$ and $$\mathbf{p=-i\nabla}$$ we get
+
+$$\left[i \beta \frac{\partial }{\partial t} + \beta  i\boldsymbol{\alpha} \cdot \mathbf{\nabla} - \beta^2 m  \right]\psi=0 $$
+
+Replacing $$\beta^2$$ by $$I$$ and expanding $$\mathbf{\alpha\cdot\nabla}$$ we get
+
+$$\left[i \beta \frac{\partial }{\partial t} + i\beta \left(\alpha_x \frac{\partial}{\partial_x}+\alpha_y \frac{\partial}{\partial_y}+\alpha_z \frac{\partial}{\partial_z}\right) - m  \right]\psi=0 $$
+
+To express the Dirac equation in a covariant form, we introduce the gamma matrices $$ \gamma^\mu $$, where $$ \mu = 0, 1, 2, 3 $$. 
+
+
+In this notation, $$ \gamma^0 = \beta $$ and $$ \gamma^j = \beta \alpha^j $$ for $$ j = 1, 2, 3 $$.
+
+$$\begin{align*}\left[i \gamma^0\partial_0 + i \gamma^1\partial_1+i\gamma^2\partial_2+i\gamma^3\partial_3 - m  \right]\psi&=0\end{align*} $$
+
+
+The Dirac equation then can be written in a compact form, which is invariant under Lorentz transformations as:
+
+$$ (i \gamma^\mu \partial_\mu - m) \psi = 0 $$
+
+
+where:
+- $$ \partial_\mu = \frac{\partial}{\partial x^\mu} $$ is the four-gradient, with $$ \partial_0 = \frac{\partial}{\partial t} $$ and $$ \partial_i = \frac{\partial}{\partial x^i} $$ for spatial coordinates.
+- $$ \gamma^\mu $$ are the gamma matrices, which ensure that the equation transforms correctly under Lorentz transformations.
+
+This is the Dirac equation, describing spin-1/2 particles in relativistic quantum mechanics.
