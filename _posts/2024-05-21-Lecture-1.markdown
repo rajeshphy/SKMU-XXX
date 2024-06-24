@@ -83,6 +83,14 @@ $$
 - **Historical Context:** Independently discovered by Oskar Klein and Walter Gordon in 1926, the Klein–Gordon equation was one of the earliest attempts to formulate a relativistic wave equation.
 
 ## Limitations
+1. **Negative Probability Density:**
+   - The probability density derived from the Klein-Gordon equation is not always positive-definite, complicating its interpretation as a physical probability distribution.
 
-While the Klein–Gordon equation successfully incorporates relativistic principles, it is not suitable for describing single-particle quantum mechanics due to issues like negative probability densities. However, it remains essential for understanding and describing scalar fields in the framework of quantum field theory.
+2. **Inclusion of Negative Energy States:**
+   - The equation admits solutions with negative energy, which challenges the straightforward interpretation of these solutions within a single-particle framework.
 
+3. **Inadequate for Particles with Spin:**
+   - The Klein-Gordon equation does not account for spin, making it unsuitable for describing fermions, such as electrons, which have non-zero spin.
+
+4. **Unbounded Hamiltonian:**
+   - The Hamiltonian associated with the Klein-Gordon equation is not bounded from below, leading to stability issues and necessitating reinterpretation within the framework of quantum field theory.

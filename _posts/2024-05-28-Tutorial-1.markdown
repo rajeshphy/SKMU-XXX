@@ -17,49 +17,62 @@ and $$m$$ is the mass of the particle.
 
 #### Question 1: Derive the Klein-Gordon equation from the relativistic energy-momentum relation.
 
-<!--
+
 **Solution:**
 Start with the relativistic energy-momentum relation:
 $$ E^2 = p^2c^2 + m^2c^4 $$
-Replace $$E$$ with $$i\hbar \frac{\partial}{\partial t}$$ and $$\vec{p}$$ with $$-i\hbar \nabla$$:
+
+Replace $$E$$ with $$i\hbar \frac{\partial}{\partial t}$$ and $$\vec{p}$$ with $$-i\hbar \nabla$$
+
 $$ (i\hbar \frac{\partial}{\partial t})^2 = (-i\hbar \nabla)^2 c^2 + m^2 c^4 $$
 $$ -\hbar^2 \frac{\partial^2}{\partial t^2} = -\hbar^2 c^2 \nabla^2 + m^2 c^4 $$
-Divide by $$-\hbar^2$$:
+
+Divide by $$-\hbar^2$$
+
 $$ \frac{\partial^2}{\partial t^2} - c^2 \nabla^2 = \frac{m^2 c^4}{\hbar^2} $$
-Set $$c = 1$$ (natural units):
+
+Set $$c = 1$$ (natural units)
+
 $$ \frac{\partial^2}{\partial t^2} - \nabla^2 = m^2 $$
+
 This is the Klein-Gordon equation:
 $$ (\Box + m^2) \psi = 0 $$
--->
-#### Question 2: Find the plane wave solution to the Klein-Gordon equation and verify it satisfies the equation.
 
-<!--
+#### Question 2: Find the plane wave solution to the Klein-Gordon equation and verify it satisfies the dispersion equation, $$ \omega^2 = k^2 + m^2 $$.
+
+
 **Solution:**
 Assume a plane wave solution of the form:
 $$ \psi = e^{i(\vec{k} \cdot \vec{x} - \omega t)} $$
+
 Compute the second time derivative:
 $$ \frac{\partial^2 \psi}{\partial t^2} = -\omega^2 e^{i(\vec{k} \cdot \vec{x} - \omega t)} $$
+
 Compute the Laplacian:
 $$ \nabla^2 \psi = -k^2 e^{i(\vec{k} \cdot \vec{x} - \omega t)} $$
+
 Substitute into the Klein-Gordon equation:
 $$ (\frac{\partial^2}{\partial t^2} - \nabla^2 + m^2) \psi = 0 $$
 $$ (-\omega^2 + k^2 + m^2) e^{i(\vec{k} \cdot \vec{x} - \omega t)} = 0 $$
+
 Thus, the dispersion relation is:
 $$ \omega^2 = k^2 + m^2 $$
--->
+
 
 #### Question 3: Given $$m = 1 \, \text{GeV}/c^2$$, $$k = 0.5 \, \text{GeV}/c$$, find $$\omega$$. Use the dispersion relation $$\omega^2 = k^2 + m^2$$.
 
-<!--
+
 **Solution:**
 Use the dispersion relation $$\omega^2 = k^2 + m^2$$:
 $$ \omega = \sqrt{k^2 + m^2} $$
-Given $$m = 1 \, \text{GeV}/c^2$$, $$k = 0.5 \, \text{GeV}/c$$:
+
+Given $$m = 1 \, \text{GeV}/c^2$$, $$k = 0.5 \, \text{GeV}/c$$.
+
 $$ \omega = \sqrt{(0.5 \, \text{GeV}/c)^2 + (1 \, \text{GeV}/c^2)^2} $$
 $$ \omega = \sqrt{0.25 + 1} \, \text{GeV} $$
 $$ \omega = \sqrt{1.25} \, \text{GeV} $$
 $$ \omega \approx 1.118 \, \text{GeV} $$
--->
+
 ## Dirac Equation
 
 ### Introduction
@@ -70,19 +83,101 @@ where $$\gamma^\mu$$ are the gamma matrices.
 
 #### Question 4: Derive the Dirac equation from the linearization of the Klein-Gordon equation.
 
-<!--
+
 **Solution:**
-Start with the Klein-Gordon equation in momentum space:
-$$ (E^2 - p^2 - m^2) \psi = 0 $$
-To linearize, assume $$E$$ and $$\vec{p}$$ are linear operators:
-$$ (i\hbar \frac{\partial}{\partial t})^2 = (i\gamma^0 \partial_0 + i\gamma^i \partial_i)^2 = (\gamma^\mu p_\mu)^2 $$
-We want:
-$$ \gamma^\mu p_\mu \gamma^\nu p_\nu = (p_\mu p^\mu) $$
-Choose $$\gamma^\mu$$ matrices that satisfy the Clifford algebra:
-$$ \{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu} $$
-Thus, we obtain the Dirac equation:
-$$ (i\gamma^\mu \partial_\mu - m) \psi = 0 $$
--->
+
+The Dirac equation was formulated to address the limitations of the Klein-Gordon equation, specifically to describe spin-1/2 particles and to ensure positive-definite probability densities.
+
+#### Linearizing the Klein-Gordon Equation
+The Klein-Gordon equation is given by:
+$$ \left( \frac{\partial^2}{\partial t^2} - \nabla^2 + m^2 \right) \psi = 0 $$
+
+To derive the Dirac equation, we seek a first-order differential equation in both space and time that would still be consistent with the principles of special relativity. We start with the assumption that the equation should be linear in the first derivatives:
+
+$$ i \hbar \frac{\partial \psi}{\partial t} = \left( \alpha \cdot \mathbf{p} + \beta m \right) \psi $$
+
+Here, $$ \alpha $$ and $$ \beta $$ are matrices, and $$ \mathbf{p} = -i \hbar \nabla $$ is the momentum operator.
+
+#### Requirements for Matrices
+To ensure consistency with special relativity and the correct energy-momentum relation, we require that:
+
+$$ E^2 = \mathbf{p}^2 c^2 + m^2 c^4 $$
+
+Square both sides of our proposed equation:
+
+$$ \left( i \hbar \frac{\partial}{\partial t} \right)^2 \psi = \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 \psi $$
+
+Expanding the right-hand side, we get:
+
+$$ - \hbar^2 \frac{\partial^2 \psi}{\partial t^2} = \left( \alpha_i p_i \alpha_j p_j + \alpha_i p_i \beta m + \beta m \alpha_j p_j + \beta^2 m^2 \right) \psi $$
+
+Using the commutation relations of the matrices $$ \alpha $$ and $$ \beta $$:
+
+$$ \alpha_i \alpha_j + \alpha_j \alpha_i = 2 \delta_{ij} I $$
+
+$$ \alpha_i \beta + \beta \alpha_i = 0 $$
+
+$$ \beta^2 = I $$
+
+Substituting these back, we get:
+
+$$ \left( - \hbar^2 \frac{\partial^2}{\partial t^2} + \hbar^2 \nabla^2 - m^2 \right) \psi = 0 $$
+
+This reduces to the Klein-Gordon equation, showing that our linear equation is consistent.
+
+#### Explicit Form of Dirac Matrices
+The matrices $$ \alpha $$ and $$ \beta $$ must satisfy the following conditions:
+
+$$ \alpha_i \alpha_j + \alpha_j \alpha_i = 2 \delta_{ij} I $$
+
+$$ \alpha_i \beta + \beta \alpha_i = 0 $$
+
+$$ \beta^2 = I $$
+
+One common representation of these matrices is the Dirac-Pauli representation:
+
+$$ \beta = \gamma^0 = \begin{pmatrix} I & 0 \\ 0 & -I \end{pmatrix} $$
+
+$$ \alpha_i = \gamma^0 \gamma^i $$
+
+where $$ \gamma^i $$ are the Dirac gamma matrices.
+
+#### The Dirac Equation
+Combining all these, we get the Dirac equation in the form:
+Combining all these, we get the Dirac equation in the form:
+
+$$ i \hbar \frac{\partial \psi}{\partial t} = \left( c \boldsymbol{\alpha} \cdot \mathbf{p} + \beta mc^2 \right) \psi $$
+
+In natural units ($$ \hbar = c = 1 $$), this simplifies to:
+
+$$ i \frac{\partial \psi}{\partial t} = \left( \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m \right) \psi $$
+
+To express the Dirac equation in a covariant form, we introduce the gamma matrices $$ \gamma^\mu $$, where $$ \mu = 0, 1, 2, 3 $$. These matrices are defined to satisfy the anticommutation relations:
+
+$$ \{ \gamma^\mu, \gamma^\nu \} = \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu \nu} I $$
+
+where $$ g^{\mu \nu} $$ is the metric tensor of spacetime, given by:
+
+$$ g^{\mu \nu} = 
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix} $$
+
+In this notation, $$ \gamma^0 = \beta $$ and $$ \gamma^i = \beta \alpha^i $$ for $$ i = 1, 2, 3 $$.
+
+The Dirac equation can then be written in a covariant form, which is invariant under Lorentz transformations:
+
+$$ (i \gamma^\mu \partial_\mu - m) \psi = 0 $$
+
+where:
+- $$ \partial_\mu = \frac{\partial}{\partial x^\mu} $$ is the four-gradient, with $$ \partial_0 = \frac{\partial}{\partial t} $$ and $$ \partial_i = \frac{\partial}{\partial x^i} $$ for spatial coordinates.
+- $$ \gamma^\mu $$ are the gamma matrices, which ensure that the equation transforms correctly under Lorentz transformations.
+
+This is the Dirac equation, describing spin-1/2 particles in relativistic quantum mechanics.
+
 #### Question 5: Find the plane wave solution to the Dirac equation and verify it satisfies the equation.
 
 <!--
