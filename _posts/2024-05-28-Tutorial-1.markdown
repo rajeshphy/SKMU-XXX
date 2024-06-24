@@ -94,7 +94,7 @@ $$ \left( \frac{\partial^2}{\partial t^2} - \nabla^2 + m^2 \right) \psi = 0 $$
 
 To derive the Dirac equation, we seek a first-order differential equation in both space and time that would still be consistent with the principles of special relativity. We start with the assumption that the equation should be linear in the first derivatives:
 
-$$ i \hbar \frac{\partial \psi}{\partial t} = \left( \alpha \cdot \mathbf{p} + \beta m \right) \psi $$
+$$\color{red}{ i \hbar \frac{\partial \psi}{\partial t} = \left( \alpha \cdot \mathbf{p} + \beta m \right) \psi }$$
 
 Here, $$ \alpha $$ and $$ \beta $$ are matrices, and $$ \mathbf{p} = -i \hbar \nabla $$ is the momentum operator.
 
@@ -103,15 +103,18 @@ To ensure consistency with special relativity and the correct energy-momentum re
 
 $$ E^2 = \mathbf{p}^2 c^2 + m^2 c^4 $$
 
-Square both sides of our proposed equation:
+Square both sides of our proposed equation and taking $$c=\hbar=1$$(natural units):
 
-$$ \left( i \hbar \frac{\partial}{\partial t} \right)^2 \psi = \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 \psi $$
+$$ \left( i \frac{\partial}{\partial t} \right)^2 \psi = \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 \psi $$
 
+
+```Highlighted section below can be skipped, its just for verification```
+<div style="background-color: #f0f0f0; padding: 10px;">
 Expanding the right-hand side, we get:
 
 $$ - \hbar^2 \frac{\partial^2 \psi}{\partial t^2} = \left( \alpha_i p_i \alpha_j p_j + \alpha_i p_i \beta m + \beta m \alpha_j p_j + \beta^2 m^2 \right) \psi $$
 
-Using the commutation relations of the matrices $$ \alpha $$ and $$ \beta $$:
+Using the commutation relations of the matrices \( \alpha \) and \( \beta\)
 
 $$ \alpha_i \alpha_j + \alpha_j \alpha_i = 2 \delta_{ij} I $$
 
@@ -121,11 +124,12 @@ $$ \beta^2 = I $$
 
 Substituting these back, we get:
 
-$$ \left( \hbar^2 \frac{\partial^2}{\partial t^2} - \hbar^2 \nabla^2 + m^2 \right) \psi = 0 $$
+$$ \left(  \frac{\partial^2}{\partial t^2} -  \nabla^2 + m^2 \right) \psi = 0 $$
 
 This reduces to the Klein-Gordon equation, showing that our linear equation is consistent.
+</div>
 
-#### Explicit Form of Dirac Matrices
+#### Explicit Form of Dirac Matrices: $$\mathbf{\alpha},\;\beta$$
 
 One common representation of these matrices is the Dirac-Pauli representation:
 
@@ -137,15 +141,28 @@ where $$ \gamma^i $$ are the Dirac gamma matrices.
 
 #### The Dirac Equation
 Combining all these, we get the Dirac equation in the form:
-Combining all these, we get the Dirac equation in the form:
 
 $$ i \hbar \frac{\partial \psi}{\partial t} = \left( c \boldsymbol{\alpha} \cdot \mathbf{p} + \beta mc^2 \right) \psi $$
 
 In natural units ($$ \hbar = c = 1 $$), this simplifies to:
 
 $$ i \frac{\partial \psi}{\partial t} = \left( \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m \right) \psi $$
+Rearranging the equation we get
 
-To express the Dirac equation in a covariant form, we introduce the gamma matrices $$ \gamma^\mu $$, where $$ \mu = 0, 1, 2, 3 $$. These matrices are defined to satisfy the anticommutation relations:
+$$\left[i \frac{\partial }{\partial t} - \left( \boldsymbol{\alpha} \cdot \mathbf{p} - \beta m \right) \right]\psi=0 $$
+Multiplying both sides by $$\beta$$ and using the relation $$\beta^2=I$$ and $$\mathbf{p=-i\nabla}$$ we get
+
+$$\left[i \beta \frac{\partial }{\partial t} + \beta  i\boldsymbol{\alpha} \cdot \mathbf{\nabla} - \beta^2 m  \right]\psi=0 $$
+
+Replacing $$\beta^2$$ by $$I$$ and expanding $$\mathbf{\alpha\cdot\nabla}$$ we get
+
+$$\left[i \beta \frac{\partial }{\partial t} + i\beta \left(\alpha_x \frac{\partial}{\partial_x}+\alpha_y \frac{\partial}{\partial_y}+\alpha_z \frac{\partial}{\partial_z}\right) - m  \right]\psi=0 $$
+
+To express the Dirac equation in a covariant form, we introduce the gamma matrices $$ \gamma^\mu $$, where $$ \mu = 0, 1, 2, 3 $$. 
+
+
+
+<!-- These matrices are defined to satisfy the anticommutation relations:
 
 $$ \{ \gamma^\mu, \gamma^\nu \} = \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 g^{\mu \nu} I $$
 
@@ -157,11 +174,14 @@ $$ g^{\mu \nu} =
 0 & -1 & 0 & 0 \\
 0 & 0 & -1 & 0 \\
 0 & 0 & 0 & -1
-\end{pmatrix} $$
+\end{pmatrix} $$ -->
 
 In this notation, $$ \gamma^0 = \beta $$ and $$ \gamma^i = \beta \alpha^i $$ for $$ i = 1, 2, 3 $$.
 
-The Dirac equation can then be written in a covariant form, which is invariant under Lorentz transformations:
+$$\begin{align*}\left[i \gamma^0\partial_0 + i \gamma^1\partial_1+i\gamma^2\partial_2+i\gamma^3\partial_3 - m  \right]\psi&=0\end{align*} $$
+
+
+The Dirac equation then can be written in a covariant form, which is invariant under Lorentz transformations as:
 
 $$ (i \gamma^\mu \partial_\mu - m) \psi = 0 $$
 
@@ -170,7 +190,7 @@ where:
 - $$ \gamma^\mu $$ are the gamma matrices, which ensure that the equation transforms correctly under Lorentz transformations.
 
 This is the Dirac equation, describing spin-1/2 particles in relativistic quantum mechanics.
-
+<!-- 
 ### Footnote: Step by step expansion of the Equation $$\left( \alpha \cdot \mathbf{p} + \beta m \right)^2$$
 
 Starting from:
@@ -220,7 +240,7 @@ Now using commutation relations, we can simplify the terms:
 
 4. **Fourth Term:**
    $$ \beta^2 m^2 = I m^2 = m^2 I $$
-
+ -->
 
 
 #### Question 5: Find the plane wave solution to the Dirac equation and verify it satisfies the equation.
