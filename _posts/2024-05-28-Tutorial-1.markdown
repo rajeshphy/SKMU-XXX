@@ -206,7 +206,7 @@ We handle each term individually:
 Combining these results:
 $$ \left( \alpha \cdot \mathbf{p} + \beta m \right)^2 = \alpha_i p_i \alpha_j p_j + \alpha_i p_i \beta m + \beta m \alpha_j p_j + \beta^2 m^2 $$
 
-Using these commutation relations, we can simplify the terms:
+Now using commutation relations, we can simplify the terms:
 
 1. **First Term:**
    $$ \alpha_i p_i \alpha_j p_j = p_i p_j (\alpha_i \alpha_j) = p_i p_j \left( \delta_{ij} I + \alpha_j \alpha_i \right) = p_i p_i I = \mathbf{p}^2 I $$
