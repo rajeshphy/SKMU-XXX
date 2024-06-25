@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tutorial-I"
+title:  "Tutorial-QM"
 date:   2024-05-28 18:47:26 +0530
 categories: lecture
 ---
@@ -147,7 +147,7 @@ $$ i \frac{\partial \psi}{\partial t} = \left( \boldsymbol{\alpha} \cdot \mathbf
 
 Rearranging the equation we get
 
-$$\left[i \frac{\partial }{\partial t} - \left( \boldsymbol{\alpha} \cdot \mathbf{p} - \beta m \right) \right]\psi=0 $$
+$$\left[i \frac{\partial }{\partial t} - \left( \boldsymbol{\alpha} \cdot \mathbf{p} + \beta m \right) \right]\psi=0 $$
 
 Multiplying both sides by $$\beta$$ and using the relation $$\beta^2=I$$ and $$\mathbf{p=-i\nabla}$$ we get
 

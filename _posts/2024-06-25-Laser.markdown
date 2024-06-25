@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "LASER"
+date:   2024-06-21 18:47:26 +0530
+categories: lecture
+---
+
+# Outline
+
+```
+Basic principles and different LASER’s: principles and working of Ruby Laser, He-Ne Laser, Solid state laser, semiconductor laser CO2 LASER and qualitative description of longitudinal and TE- LASER systems, Excimer LASER, Dye LASER, Roman LASER, Plasma recombination LASER. 
+
+09 Lectures
+```
+## Introduction to LASERs
+- A laser is defined as an optical device that generates an intense beam of light with high coherence and narrow spectral bandwidth. This is achieved through the process of stimulated emission, where an external energy source excites atoms or molecules to a higher energy state. When these excited atoms or molecules return to a lower energy state, they emit photons in phase, leading to the amplification of light. The term "laser" stands for Light Amplification by Stimulated Emission of Radiation, highlighting its fundamental mechanism of operation.
+
+There are two main mechanisms involved in the operation of a laser:
+
+1. Population Inversion: This is the process where the number of atoms or molecules in an excited state is greater than the number in the ground state. This condition is essential for stimulated emission to occur and for the laser to function effectively.
+
+2. Stimulated Emission: This is the process where an incoming photon interacts with an excited atom or molecule, causing it to emit a second photon with the same energy, phase, and direction as the incoming photon. This leads to the amplification of light and the generation of a coherent laser beam.
+
+Stimulated emission is the key process that distinguishes lasers from other light sources, such as incandescent bulbs or fluorescent lamps. It is different from **spontaneous emission**, where an atom or molecule emits a photon randomly and independently of external stimuli.
+
+![Example Image](/assets/img/atom.jpeg)
+
+<img src="/assets/img/atom.jpeg" alt="Example Image" width="600" height="400" class="my-custom-class">
+
+## Types of LASERs and Their Working Principles
+1. Ruby Laser
+2. He-Ne Laser
+3. Solid State Laser
+4. Semiconductor Laser
+5. CO2 LASER
+
+## Advanced LASER Systems
+- Qualitative description of:
+   - Longitudinal LASER Systems
+   - TE-LASER Systems
+
+## Specialized LASER Types
+1. Excimer LASER
+2. Dye LASER
+3. Roman LASER
+4. Plasma Recombination LASER
