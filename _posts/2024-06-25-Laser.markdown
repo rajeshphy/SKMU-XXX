@@ -12,7 +12,7 @@ Basic principles and different LASER’s: principles and working of Ruby Laser, 
 
 09 Lectures
 ```
-## Introduction to LASERs
+## <span style="color:red">Introduction to LASERs</span>
 - A laser is defined as an optical device that generates an intense beam of light with high coherence and narrow spectral bandwidth. This is achieved through the process of stimulated emission, where an external energy source excites atoms or molecules to a higher energy state. When these excited atoms or molecules return to a lower energy state, they emit photons in phase, leading to the amplification of light. The term "laser" stands for Light Amplification by Stimulated Emission of Radiation, highlighting its fundamental mechanism of operation.
 
 There are two main mechanisms involved in the operation of a laser:
@@ -45,7 +45,7 @@ To produce a population inversion, we pump the material to excite the atoms from
 
 ---
 
-## Types of LASERs
+## <span style="color:red">Types of LASERs</span>
 
 ## 1. Solid State LASERs
 Solid-state lasers use a solid material as the gain medium. This medium typically consists of a glass or crystalline host material doped with ions that provide the necessary energy states for lasing.
@@ -165,11 +165,48 @@ Semiconductor lasers, also known as diode lasers, use semiconductor materials as
 - **InP (Indium Phosphide) Laser**
 - **GaAs (Gallium Arsenide) Laser**
 
-#### Construction and Working Principle
+#### Construction
+
+<img src="/SKMU/assets/img/LASER/semi-laser.png" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 
 1. **Active Region:** The laser diode has a p-n junction as the active region where the lasing action occurs.
 2. **Pumping Mechanism:** Electrical current is injected into the p-n junction, causing electrons and holes to recombine and emit photons.
 3. **Optical Cavity:** The semiconductor material itself forms an optical cavity with reflective surfaces at the ends to provide feedback for the amplification of light.
+
+### Working Principle
+
+
+##### 1. Structure of the P-N Junction
+
+A semiconductor laser consists of a p-type and an n-type semiconductor material joined together to form a p-n junction. When these two materials are joined, a depletion region is formed at the junction where no free charge carriers (electrons or holes) are present.
+
+##### 2. Forward Biasing the P-N Junction
+
+When a forward voltage is applied across the p-n junction (positive voltage to the p-type material and negative to the n-type), electrons from the n-type material and holes from the p-type material are pushed towards the junction. This reduces the width of the depletion region and allows current to flow through the junction.
+
+##### 3. Carrier Injection and Recombination
+
+The applied forward voltage causes electrons to be injected into the conduction band of the p-type material and holes into the valence band of the n-type material. At the junction, electrons and holes recombine. This recombination releases energy in the form of photons (light). The process can be described in three steps:
+
+1. **Carrier Injection:** Electrons and holes are injected into the active region from the n-type and p-type materials, respectively.
+2. **Recombination:** In the active region, electrons recombine with holes. Each recombination event releases a photon with energy equal to the bandgap energy of the semiconductor material.
+3. **Stimulated Emission:** Some of the emitted photons stimulate other electrons to recombine with holes, producing additional photons. This chain reaction results in a significant amplification of light.
+
+##### 4. Optical Feedback and Resonance
+
+To sustain lasing action, the semiconductor laser has an optical cavity formed by cleaving the semiconductor crystal to create parallel, reflective end faces. These faces act as mirrors, reflecting photons back and forth through the active region. The cavity length is designed such that it supports standing wave patterns of specific wavelengths.
+
+1. **Photon Reflection:** Photons emitted due to recombination are reflected back and forth between the mirrors.
+2. **Amplification:** As photons travel through the active region, they stimulate further recombination events, resulting in the amplification of light.
+3. **Coherent Light Emission:** When the amplified light reaches a certain intensity, it escapes through the partially reflective mirror at one end of the cavity as a coherent laser beam.
+
+##### 5. Threshold Condition
+
+For lasing to occur, the gain (amplification) provided by stimulated emission must overcome the losses due to absorption, scattering, and reflection at the mirrors. This condition is known as the threshold condition. The current at which this occurs is called the threshold current.
+
+1. **Below Threshold:** Below the threshold current, spontaneous emission dominates, and the device behaves like an LED.
+2. **Above Threshold:** Above the threshold current, stimulated emission dominates, and the device produces coherent laser light.
+
 
 #### Key Characteristics
 
@@ -186,13 +223,14 @@ Semiconductor lasers, also known as diode lasers, use semiconductor materials as
 
 ---
 
+## <span style="color:red">Advanced LASER Systems</span>
 
-## Advanced LASER Systems
 - Qualitative description of:
    - Longitudinal LASER Systems
    - TE-LASER Systems
 
-## Specialized LASER Types
+## <span style="color:red">Specialized LASER Types</span>
+
 1. Excimer LASER
 2. Dye LASER
 3. Roman LASER
