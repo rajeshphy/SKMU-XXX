@@ -32,7 +32,7 @@ We need to create a non-equilibrium situation where more atoms are in a higher-e
 
 The energy-level diagram for such an atom includes a ground state and three excited states of energies E1, E2, and E3 as given in figure-a:
 
-<img src="/SKMU/assets/img/LASER/pumping.jpeg" alt="Interaction Process" width="400" height="200" class="my-custom-class">
+<img src="/SKMU/assets/img/LASER/pumping.jpeg" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 
 A laser using a material with these energy levels is called a four-level laser. For laser action, the states with energies E1 and E3 must have short lifetimes of about 10⁻⁸ seconds, while the state with energy E2 must have a long lifetime of about 10⁻³ seconds. This long-lived metastable state can occur due to restrictions imposed by conservation of angular momentum that hinder photon emission. The metastable state is the one we aim to populate.
 
@@ -41,7 +41,7 @@ Metastable State: A state of an atom or molecule with a long lifetime due to res
 ```
 To produce a population inversion, we pump the material to excite the atoms from the ground state into the states of energies E1, E2, and E3 as given in figure-b. In a gas, this can be done by inserting two electrodes into the gas container. When a high voltage is applied to the electrodes, an electric discharge occurs, causing collisions between ionized atoms and electrons that excite the atoms to various energy states. Within about 10⁻⁸ seconds as shown in figure-c, the atoms excited to states E1 and E3 undergo spontaneous photon emission, leaving these states depopulated. Atoms accumulate in the metastable state with energy E2. Although the number of atoms in the metastable state is less than in the ground state, it is much greater than in the nearly unoccupied state of energy E1, resulting in a population inversion of state E2 relative to state E1. The levels E1 and E3 are essential: atoms undergoing spontaneous emission from the E3 level help populate the E2 level, and the presence of the E1 level enables the population inversion.
 
-<img src="/SKMU/assets/img/LASER/after-pumping.jpeg" alt="Interaction Process" width="400" height="300" class="my-custom-class">
+<img src="/SKMU/assets/img/LASER/after-pumping.jpeg" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 
 ---
 
