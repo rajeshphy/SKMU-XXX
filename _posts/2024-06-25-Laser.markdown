@@ -25,8 +25,8 @@ Stimulated emission is the key process that distinguishes lasers from other ligh
 
 ### Light-Atom Interaction Process
 Three processes in which atoms interact with light are given in figure below:
-<img src="/SKMU/assets/img/LASER/interaction-process.jpeg" alt="Interaction Process" width="700" height="1000" class="my-custom-class">
 
+<img src="/SKMU/assets/img/LASER/interaction-process.jpeg" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 ### Population Inversion Process
 We need to create a non-equilibrium situation where more atoms are in a higher-energy state than in a lower-energy state, known as a population inversion. In this situation, the rate of energy radiation by stimulated emission can exceed the rate of absorption, making the system act as a net source of radiation with photon energy E. We achieve population inversion by starting with atoms that have the appropriate excited states. 
 
@@ -65,7 +65,7 @@ A ruby laser is a type of solid-state laser that uses a synthetic ruby crystal a
 - Both ends of the rod are highly polished and parallel, with one end partially reflective and the other end fully reflective.
 - The rod is surrounded by a xenon flash tube, which provides the pumping energy to excite the chromium ions in the ruby.
 
-<img src="/SKMU/assets/img/LASER/ruby.gif" alt="Interaction Process" width="450" height="650" class="my-custom-class">
+<img src="/SKMU/assets/img/LASER/ruby.gif" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 ### Working Principle
 
 1. The xenon flash tube emits a burst of light, which excites the chromium ions in the ruby rod to a higher energy state.
@@ -89,10 +89,6 @@ A ruby laser is a type of solid-state laser that uses a synthetic ruby crystal a
 
 ---
 
-
-
-
-
 ## 2. Gas LASERs
 Gas lasers use a gas mixture as the gain medium to produce laser light. The gas mixture can consist of various combinations of noble gases, halogens, and metal vapors, depending on the desired output wavelength and power.
 ##### Examples of Gas Lasers
@@ -110,7 +106,7 @@ The He-Ne laser is a gas laser that uses a mixture of helium and neon gases. It 
 - Mirrors are placed at both ends of the tube, with one fully reflective and the other partially reflective.
 - The typical length of the discharge tube is 80 cm with a diameter of 1 cm.
 
-<img src="/SKMU/assets/img/LASER/He-Ne.png" alt="Interaction Process" width="400" height="300" class="my-custom-class">
+<img src="/SKMU/assets/img/LASER/He-Ne.png" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
 ### Working Principle
 
 1. An electric discharge excites the helium atoms to higher energy levels.
