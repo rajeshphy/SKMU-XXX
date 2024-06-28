@@ -223,11 +223,57 @@ For lasing to occur, the gain (amplification) provided by stimulated emission mu
 
 ---
 
+## Introduction to Waveguides
+
+Waveguides are structures designed to guide electromagnetic waves from one point to another. They are utilized based on the desired operating frequency, power requirements, and acceptable transmission losses. Common types include coaxial cables, two-wire lines, microstrip lines, rectangular waveguides, and optical fibers as shown in figure below.
+
+<img src="/SKMU/assets/img/LASER/waveguide.jpeg" alt="Interaction Process" class="my-custom-class" style="max-width:100%; height:auto;">
+
+### Longitudinal-Transverse Decompositions
+
+To understand wave propagation in waveguides, we use solutions to Maxwell’s equations that describe the behavior of electric and magnetic fields along the guiding direction (z) and their confinement in the transverse directions (x, y).
+
+The electric and magnetic fields can be represented as:
+
+$$ E(x, y, z, t) = E(x, y) e^{j(\omega t - \beta z)} $$
+
+$$ H(x, y, z, t) = H(x, y) e^{j(\omega t - \beta z)} $$
+
+where $$\beta$$ is the propagation wavenumber and $$\lambda_g = \frac{2\pi}{\beta}$$ is the guide wavelength.
+
+### Decomposition of Fields
+
+The fields can be decomposed into transverse and longitudinal components:
+
+$$ E(x, y) = E_T(x, y) + \hat{z}E_z(x, y) $$
+
+$$ H(x, y) = H_T(x, y) + \hat{z}H_z(x, y) $$
+
+Where the transverse electric field $$E_T(x, y)$$ can be further decomposed into its x and y components:
+
+$$ E_T(x, y) = \hat{x}E_x(x, y) + \hat{y}E_y(x, y) $$
+
+### Classification of Modes
+
+Based on the longitudinal components $$E_z$$ and $$H_z$$, modes are classified as:
+
+- **TEM (Transverse Electric and Magnetic) Modes**: $$E_z = 0$$, $$H_z = 0$$
+- **TE (Transverse Electric) Modes**: $$E_z = 0$$, $$H_z \neq 0$$
+- **TM (Transverse Magnetic) Modes**: $$E_z \neq 0$$, $$H_z = 0$$
+- **Hybrid Modes**: $$E_z \neq 0$$, $$H_z \neq 0$$
+
+
+
+
 ## <span style="color:red">Advanced LASER Systems</span>
 
-- Qualitative description of:
-   - Longitudinal LASER Systems
-   - TE-LASER Systems
+### Longitudinal LASER Systems
+
+   Longitudinal LASER systems operate by aligning the optical resonator (cavity) such that the light travels parallel to the cavity's axis. In these systems, the gain medium is pumped to produce a population inversion, allowing for stimulated emission. The emitted photons travel back and forth between two mirrors at each end of the cavity, amplifying the light through successive passes. The longitudinal modes are determined by the cavity's length and the refractive index of the gain medium, resulting in discrete frequency modes. These systems are critical for applications requiring high coherence and spectral purity, such as in spectroscopy and communication. Key parameters include the cavity length, the reflectivity of the mirrors, and the gain medium's properties. Stability and alignment of the optical components are crucial for the effective operation of longitudinal LASER systems.
+
+### TE-LASER Systems
+
+   TE (Transverse Electric) LASER systems operate with the electric field component of the light oscillating perpendicular to the direction of propagation within the waveguide or resonator structure. These systems typically involve semiconductor materials and are used in diode lasers, where the active region is sandwiched between two cladding layers with differing refractive indices. This configuration confines the light within the active region and supports transverse electric modes. TE modes are characterized by having no electric field component in the direction of propagation (z-axis), which means the electric field lies entirely in the transverse plane (x, y). TE LASER systems are essential in applications requiring compact, efficient, and high-speed light sources, such as in optical communication, barcode scanning, and laser printing. Their design focuses on optimizing the waveguide structure, material composition, and junction properties to achieve desired performance.
 
 ## <span style="color:red">Specialized LASER Types</span>
 
