@@ -178,7 +178,6 @@ This is the Dirac equation, describing spin-1/2 particles in relativistic quantu
 
 #### Question 5: Find the plane wave solution to the Dirac equation and verify it satisfies the equation.
 
-<!--
 **Solution:**
 Assume a plane wave solution of the form:
 $$ \psi = u(p) e^{i(p \cdot x)} $$
@@ -189,7 +188,6 @@ This simplifies to:
 $$ (\gamma^\mu p_\mu - m) u(p) = 0 $$
 Thus, $$u(p)$$ is a spinor satisfying the Dirac equation:
 $$ (\gamma^\mu p_\mu - m) u(p) = 0 $$
--->
 #### Question 6: Given $$m = 0.511 \, \text{MeV}/c^2$$ (electron mass), $$p = (E, 0, 0, p_z)$$, find the energy $$E$$ for $$p_z = 0.3 \, \text{MeV}/c$$.
 
 <!--
