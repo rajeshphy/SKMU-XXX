@@ -87,3 +87,104 @@ The current density conservation equation derived from the Dirac equation is:
 $$ \partial_\mu j^\mu = 0 $$
 
 This equation expresses the conservation of probability current in relativistic quantum mechanics. The four-current $$ j^\mu = \bar{\psi} \gamma^\mu \psi $$ is conserved, indicating that the total probability (or charge) is conserved in the system.
+
+---
+
+# Plane Wave Solution of Dirac Equation
+
+Sure, let's start with the plane wave given by 
+
+$$ \psi(x) = \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x} $$
+
+   where $$\begin{pmatrix} u_A \\ u_B \end{pmatrix}$$ is a spinor, and $$p \cdot x = p_\mu x^\mu = p^0 x^0 - \mathbf{p} \cdot \mathbf{x}$$.
+
+and use Dirac equation to solve for the spinors $$u_A$$, $$u_B$$ and Energy $$E$$. Here is step by step solution:
+
+1. **Substitute the Plane Wave Solution**:
+
+   Substitute $$\psi(x)$$ into the Dirac equation:
+
+   $$ (i \gamma^\mu \partial_\mu - m) \psi(x) = 0 $$
+
+   Applying the derivative $$\partial_\mu$$:
+
+   $$ \color{red}{\partial_\mu \psi(x) = -ip_\mu \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x}} $$
+
+   Thus, the Dirac equation becomes:
+
+   $$ \left[i \gamma^\mu (-ip_\mu) - m\right] \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x} = 0 $$
+
+   Simplifying, we get:
+
+   $$ (\gamma^\mu p_\mu - m) \begin{pmatrix} u_A \\ u_B \end{pmatrix} = 0 $$
+   
+   which is a Dirac equation in momentum space.
+
+
+2. **Writing the Dirac Equation in Matrix Form**:
+
+   The Dirac equation becomes:
+
+   $$ \left( \gamma^0 p^0 - \gamma^i p^i - m \right) \begin{pmatrix} u_A \\ u_B \end{pmatrix} = 0 $$
+
+   Expanding the terms, we have:
+
+   $$\color{red}{ \left[ \begin{pmatrix}
+   I & 0 \\
+   0 & -I
+   \end{pmatrix} p^0 - \begin{pmatrix}
+   0 & \sigma^i \\
+   -\sigma^i & 0
+   \end{pmatrix} p^i - m \right] \begin{pmatrix} u_A \\ u_B \end{pmatrix} = 0 }$$
+
+   where the gamma matrices are expanded with the form given by:
+
+   $$ \gamma^0 = \begin{pmatrix}
+   I & 0 \\
+   0 & -I
+   \end{pmatrix}, \quad \gamma^i = \begin{pmatrix}
+   0 & \sigma^i \\
+   -\sigma^i & 0
+   \end{pmatrix} $$
+
+   where $$I$$ is the $$2 \times 2$$ identity matrix, and $$\sigma^i$$ (with $$i = 1, 2, 3$$) are the Pauli matrices:
+
+   $$ \sigma^1 = \begin{pmatrix}
+   0 & 1 \\
+   1 & 0
+   \end{pmatrix}, \quad \sigma^2 = \begin{pmatrix}
+   0 & -i \\
+   i & 0
+   \end{pmatrix}, \quad \sigma^3 = \begin{pmatrix}
+   1 & 0 \\
+   0 & -1
+   \end{pmatrix} $$
+
+3. **Separate the Upper and Lower Components**:
+
+   On simplifying the above matrix we get: 
+
+   $$ \begin{pmatrix}
+    I(p^0-m) & -\sigma^i p^i \\
+   \sigma^i p^i & - I(p^0+m)
+   \end{pmatrix}  \begin{pmatrix} u_A \\ u_B \end{pmatrix}  = 0 $$
+
+   Or,
+
+   $$ \begin{pmatrix}
+    I(E-m) & -\sigma^i p^i \\
+   \sigma^i p^i & - I(E+m)
+   \end{pmatrix}  \begin{pmatrix} u_A \\ u_B \end{pmatrix}  = 0 $$
+
+   Or,
+
+   $$ \begin{pmatrix}
+   E-m & 0 & -p_z & -(p_x-ip_y) \\
+   0 & E-m & -(p_x+ip_y) & p_z\\
+   p_z & (p_x-ip_y)&-(E+m)&0\\
+   (p_x+ip_y) & -p_z &0 &-(E+m)
+   \end{pmatrix}  \begin{pmatrix} u_A \\ u_B \end{pmatrix}  = 0 $$
+
+
+
+To be continued ...
