@@ -94,9 +94,9 @@ This equation expresses the conservation of probability current in relativistic 
 
 Sure, let's start with the plane wave given by 
 
-$$ \psi(x) = \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x} $$
+$$ \psi(x^\mu) = \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-i p_\mu x^\mu} $$
 
-   where $$\begin{pmatrix} u_A \\ u_B \end{pmatrix}$$ is a spinor, and $$p \cdot x = p_\mu x^\mu = p^0 x^0 - \mathbf{p} \cdot \mathbf{x}$$.
+   where $$\begin{pmatrix} u_A \\ u_B \end{pmatrix}$$ is a spinor, and $$p_\mu x^\mu = p^0 x^0 - \mathbf{p} \cdot \mathbf{x}$$.
 
 and use Dirac equation to solve for the spinors $$u_A$$, $$u_B$$ and Energy $$E$$. Here is step by step solution:
 
@@ -108,11 +108,11 @@ and use Dirac equation to solve for the spinors $$u_A$$, $$u_B$$ and Energy $$E$
 
    Applying the derivative $$\partial_\mu$$:
 
-   $$ \color{red}{\partial_\mu \psi(x) = -ip_\mu \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x}} $$
+   $$ \color{red}{\partial_\mu \psi(x) = -ip_\mu \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-i p_\mu x^\mu}} $$
 
    Thus, the Dirac equation becomes:
 
-   $$ \left[i \gamma^\mu (-ip_\mu) - m\right] \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-ip \cdot x} = 0 $$
+   $$ \left[i \gamma^\mu (-ip_\mu) - m\right] \begin{pmatrix} u_A \\ u_B \end{pmatrix} e^{-i p_\mu x^\mu} = 0 $$
 
    Simplifying, we get:
 
@@ -160,7 +160,7 @@ and use Dirac equation to solve for the spinors $$u_A$$, $$u_B$$ and Energy $$E$
    0 & -1
    \end{pmatrix} $$
 
-3. **Separate the Upper and Lower Components**:
+3. **Substitute the Pauli spin matrices and Simplify**:
 
    On simplifying the above matrix we get: 
 
@@ -185,6 +185,30 @@ and use Dirac equation to solve for the spinors $$u_A$$, $$u_B$$ and Energy $$E$
    (p_x+ip_y) & -p_z &0 &-(E+m)
    \end{pmatrix}  \begin{pmatrix} u_A \\ u_B \end{pmatrix}  = 0 $$
 
+Here, the spinor $$\begin{pmatrix} u_A \\ u_B \end{pmatrix}$$ can take four possible form; two for positive energy $$E=\sqrt{p^2+m^2}$$ and two for negative energy $$E=-\sqrt{p^2+m^2}$$ as:
 
+1. For Positive energy:
+
+   $$u_1=N_1\begin{pmatrix} 1\\0 \\ A_1\\B_1 \end{pmatrix}\qquad u_2=N_2\begin{pmatrix} 0\\1 \\ A_2\\B_2 \end{pmatrix}$$
+
+   where, $$(A_1,\;B_1)$$ and $$(A_2,\;B_2)$$ are $$(\frac{p_z}{E+m} , \frac{p_x+i p_y}{E+m})$$ and $$(\frac{p_x-i p_y}{E+m} , \frac{-p_z}{E+m})$$ respectively. $$N_i$$ are normalization constant.
+
+
+2. For Negative energy:
+
+   $$u_3=N_3\begin{pmatrix} A_3\\B_3 \\ 1\\0 \end{pmatrix}\qquad u_4=N_4\begin{pmatrix} A_4\\B_4 \\ 0\\1  \end{pmatrix}$$
+
+   where, $$(A_3,\;B_3)$$ and $$(A_4,\;B_4)$$ are $$(\frac{p_z}{E-m} , \frac{p_x+i p_y}{E-m})$$ and $$(\frac{p_x-i p_y}{E-m} , \frac{-p_z}{E-m})$$ respectively.
+
+Therefore the eigenfunctions corresponding to positive energy states are:
+
+$$\psi_1(x^\mu)=u_1e^{-ip_\mu x^\mu}\qquad \psi_2(x^\mu)=u_2e^{-ip_\mu x^\mu}$$
+
+and for negative energy state the eigenfunctions are:
+
+$$\psi_3(x^\mu)=u_3e^{ip_\mu x^\mu}\qquad \psi_4(x^\mu)=u_4e^{ip_\mu x^\mu}$$
+
+
+## Interpretation of negative energy states
 
 To be continued ...
