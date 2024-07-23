@@ -161,11 +161,11 @@ $$\begin{align}\psi(\mathbf{x})&= \psi(\mathbf{x})\\
 &=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{i(kr-l\pi/2)}}{r}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)+ f(\mathbf{k',k})\frac{e^{ikr}}{r}\\
 \end{align}$$
 
-We will use the fact that the amplitude of incoming wave is the same as the amplitude of outgoing wave at large distances from the scattering source. Therefore the above equation can be written as summation over two terms by doing phase shifts of outgoing wave to combine the two outgoing waves. 
+We will use the fact that the amplitude of incoming wave is the same as the amplitude of outgoing wave at large distances from the scattering source. Therefore the above equation can be written as summation over two terms by doing phase shifts of outgoing waves inside the summation to incorporate the outgoing term $$f(\mathbf{k',k})\frac{e^{ikr}}{r}$$ as
 
 $$\begin{align}\psi(\mathbf{x})&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{i(kr-l\pi/2)+2i\delta_l}}{r}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
 &=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{ikr}}{r}e^{i(2\delta_l-l\pi/2)}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
-&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{ikr}}{r}(-1)^le^{i2\delta_l}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
+&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{ikr}}{r}(-i)^le^{i2\delta_l}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
 \end{align}$$
 
 where, $$\delta_l$$ is the phase shift for the $$l$$-th partial wave. The scattering amplitude $$f(\mathbf{k',k})=f(\theta)$$ can therefore be calculated from two successive results by comparing the factor of $$\frac{e^{ikr}}{r}$$ as
