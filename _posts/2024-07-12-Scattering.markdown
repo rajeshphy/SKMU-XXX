@@ -140,11 +140,44 @@ can be expanded in terms of spherical harmonics $$Y_{lm}(\theta,\phi)$$ as
 
 $$\begin{align}e^{i\mathbf{k\cdot x}}&=\sum_{l=0}^\infty \sum_{m=-l}^l C_{lm}\; j_l(kr)Y_{lm}(\theta,\phi)\end{align}$$
 
-where, $$j_l(kr)$$ is the spherical Bessel function of the first kind and $$C_{lm}$$ is the constant. Since a plane wave is symmetric in $$\phi$$ coordinate and therefore it is independent of $$m$$, the above equation can be simplified as
+where, $$j_l(kr)$$ is the spherical Bessel function of the first kind and $$C_{lm}$$ is the constant. Since a plane wave is symmetric in $$\phi$$ coordinate and therefore it is independent of $$m$$, further at large distances from the scattering source, the behavior of the spherical Bessel function is approximated as
+
+$$\begin{align}j_l(kr)&\approx \frac{\sin(kr-l\pi/2)}{kr}\\
+&=\frac{1}{2ikr}\left[e^{i(kr-l\pi/2)}-e^{-i(kr-l\pi/2)}\right]
+\end{align}$$
+
+therefore the incident plane wave can be written as
 
 $$\begin{align}e^{i\mathbf{k\cdot x}}&=\sum_{l=0}^\infty C_l \; j_l(kr)P_l(\cos \theta)\\
-&=\sum_{l=0}^\infty\;\sqrt{2l+1}\; j_l(kr)P_l(\cos \theta)\end{align}$$
+&=\sum_{l=0}^\infty\;C_l\; j_l(kr)P_l(\cos \theta)\\&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{i(kr-l\pi/2)}}{r}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)
+\end{align}$$
 
-where, $$P_l(\cos \theta)$$ is the Legendre polynomial of degree $$l$$ and $$C_l=\sqrt{2l+1}C_{lm}$$.
+where, $$P_l(\cos \theta)$$ is the Legendre polynomial of degree $$l$$ and $$C_l=(2l+1)\;i^l$$.
 
 The scattering wavefunction $$\psi(\mathbf{x})$$ can then rewritten in terms of summation of partial waves as
+
+$$\begin{align}\psi(\mathbf{x})&= \psi(\mathbf{x})\\
+&=e^{i\mathbf{k\cdot x}}+f(\mathbf{k',k})\frac{e^{ikr}}{r}\\
+&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{i(kr-l\pi/2)}}{r}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)+ f(\mathbf{k',k})\frac{e^{ikr}}{r}\\
+\end{align}$$
+
+We will use the fact that the amplitude of incoming wave is the same as the amplitude of outgoing wave at large distances from the scattering source. Therefore the above equation can be written as summation over two terms by doing phase shifts of outgoing wave to combine the two outgoing waves. 
+
+$$\begin{align}\psi(\mathbf{x})&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{i(kr-l\pi/2)+2i\delta_l}}{r}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
+&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{ikr}}{r}e^{i(2\delta_l-l\pi/2)}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
+&=\frac{1}{2ik}\sum_{l=0}^\infty \;C_l\left[\frac{e^{ikr}}{r}(-1)^le^{i2\delta_l}-\frac{e^{-i(kr-l\pi/2)}}{r}\right]P_l(\cos \theta)\\
+\end{align}$$
+
+where, $$\delta_l$$ is the phase shift for the $$l$$-th partial wave. The scattering amplitude $$f(\mathbf{k',k})=f(\theta)$$ can therefore be calculated from two successive results by comparing the factor of $$\frac{e^{ikr}}{r}$$ as
+
+$$\begin{align}f(\theta)&= \frac{1}{2ik}\sum_{l=0}^\infty \;C_l\;(-i)^l\left[e^{i2\delta_l}-1\right]P_l(\cos \theta)\\
+&= \frac{1}{k}\sum_{l=0}^\infty \;C_l\;(-i)^l\;\frac{e^{i2\delta_l}-1}{2i}P_l(\cos \theta)\\
+&= \frac{1}{k}\sum_{l=0}^\infty \;C_l\;(-i)^l\;\sin \delta_l\;e^{i\delta_l}P_l(\cos \theta)\\
+&=\frac{1}{k}\sum_{l=0}^\infty \;(2l+1)\;(-i)^{2l}\;\sin \delta_l\;e^{i\delta_l}P_l(\cos \theta)\\
+&=\frac{1}{k}\sum_{l=0}^\infty \;(2l+1)\;\sin \delta_l\;e^{i\delta_l}P_l(\cos \theta)\\
+\end{align}$$
+
+
+Therefore the differential scattering cross-section is given by
+
+$$\frac{d\sigma}{d\Omega}=\left| \frac{1}{k} \sum_{l=0}^\infty \;(2l+1)\;\sin \delta_l\;e^{i\delta_l}P_l(\cos \theta)\right|{}^2$$
