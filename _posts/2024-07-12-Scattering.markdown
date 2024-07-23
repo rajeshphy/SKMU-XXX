@@ -130,3 +130,21 @@ $$\frac{d\sigma}{d\Omega}=\left(\frac{\beta}{4E}\right)^2\frac{1}{\sin^4\frac{\t
 Which is the Rutherford scattering formula as derived by Rutherford in 1911 classically.
 
 ---
+# Partial Wave Analysis and Phase Shifts
+
+The incident plane wave 
+
+$$\phi(\mathbf{x})=e^{i\mathbf{k\cdot x}}$$
+
+can be expanded in terms of spherical harmonics $$Y_{lm}(\theta,\phi)$$ as
+
+$$\begin{align}e^{i\mathbf{k\cdot x}}&=\sum_{l=0}^\infty \sum_{m=-l}^l C_{lm}\; j_l(kr)Y_{lm}(\theta,\phi)\end{align}$$
+
+where, $$j_l(kr)$$ is the spherical Bessel function of the first kind and $$C_{lm}$$ is the constant. Since a plane wave is symmetric in $$\phi$$ coordinate and therefore it is independent of $$m$$, the above equation can be simplified as
+
+$$\begin{align}e^{i\mathbf{k\cdot x}}&=\sum_{l=0}^\infty C_l \; j_l(kr)P_l(\cos \theta)\\
+&=\sum_{l=0}^\infty\;\sqrt{2l+1}\; j_l(kr)P_l(\cos \theta)\end{align}$$
+
+where, $$P_l(\cos \theta)$$ is the Legendre polynomial of degree $$l$$ and $$C_l=\sqrt{2l+1}C_{lm}$$.
+
+The scattering wavefunction $$\psi(\mathbf{x})$$ can then rewritten in terms of summation of partial waves as
