@@ -1,2 +1,2 @@
-# SKMU
+# MCD
 Lecture Notes

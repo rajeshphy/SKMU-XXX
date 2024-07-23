@@ -25,6 +25,8 @@ baseurl: "/SKMU" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
+website: rajeshphy.github.io
+name: Rajesh Kumar
 
 # Build settings
 theme: minima
