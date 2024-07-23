@@ -9,3 +9,5 @@ categories: lecture
 - [Green's Function - Erik M. Olsen](/SKMU/assets/pdf/Greens-Function.pdf)
 
 - [Green's Function Example](https://bingweb.binghamton.edu/~suzuki/Math-Physics/LN-14_Green_s_function.pdf)
+
+- [Scattering Theory - B.Zwiebach](/SKMU/assets/pdf/Scattering-MIT.pdf)
