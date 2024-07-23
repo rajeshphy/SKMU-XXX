@@ -21,7 +21,6 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  text-align: center;
 }
 
 nav ul li {
@@ -48,8 +47,8 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  width: 100%;
   position: fixed;
+  width: 100%;
   bottom: 0;
 }
 
@@ -64,7 +63,6 @@ pre, code {
   padding: 5px;
   font-family: 'Times New Roman', Courier, monospace;
   color: #333;
-  overflow-x: auto;
 }
 
 /* Highlighted Code Blocks */
@@ -104,7 +102,6 @@ table th {
 .MathJax_Display {
   text-align: center;
   margin: 1em 0;
-  overflow-x: auto; /* Added to allow horizontal scrolling */
 }
 
 .MathJax .merror {
@@ -112,50 +109,4 @@ table th {
   color: #c00;
   border: 1px solid #c00;
   padding: 1px 3px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  nav ul {
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  main {
-    padding: 10px;
-    margin: 10px;
-  }
-
-  table th, table td {
-    padding: 4px;
-  }
-
-  .MathJax_Display {
-    overflow-x: auto; /* Ensure horizontal scrolling on smaller screens */
-    white-space: nowrap; /* Prevent line breaks within equations */
-  }
-}
-
-@media (max-width: 480px) {
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  main {
-    padding: 5px;
-    margin: 5px;
-  }
-
-  table {
-    font-size: 14px;
-  }
-
-  .MathJax_Display {
-    overflow-x: auto; /* Ensure horizontal scrolling on smaller screens */
-    white-space: nowrap; /* Prevent line breaks within equations */
-  }
 }
