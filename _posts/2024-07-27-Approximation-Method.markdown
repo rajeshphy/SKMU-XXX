@@ -35,13 +35,7 @@ where $$\lambda$$ is a small parameter. The Hamiltonian $$H_0$$ is the unperturb
 
     $$\int \psi_n^{(0)*} \psi_n \, d\tau = \int \psi_n^{(0)*} \psi_n^{(0)} \, d\tau = 1$$ 
     
-    
-    
-    The eigenfunction $$\psi_n$$ when expanded gives
-    
-    $$\psi_n = \psi_n^{(0)} + \lambda \psi_n^{(1)} + \lambda^2 \psi_n^{(2)} + \cdots$$
-
-    and the projection of states $$\psi_n^{(0)*}$$ gives
+    Expanding the Schrödinger equation gives
 
     $$\begin{align}
     \int \psi_n^{(0)*} (H_0 + \lambda H') \psi_n \, d\tau &= E_n \int \psi_n^{(0)*} \psi_n \, d\tau\\
