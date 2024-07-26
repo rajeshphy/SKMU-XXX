@@ -54,7 +54,7 @@ where $$\lambda$$ is a small parameter. The Hamiltonian $$H_0$$ is the unperturb
 
     <span style="color: red; font-weight: bold;">$$\lambda\int \psi_n^{(0)*} H' \psi_n^{(0)} \, d\tau+ \lambda^2\int \psi_n^{(0)*} H' \psi_n^{(1)} \, d\tau+ \cdots=\lambda E_n^{(1)}+ \lambda^2 E_n^{(2)} + \cdots$$</span>
 
-    we get first and second order corrections to the eigenvalues as
+    we get first order corrections to the eigenvalues as
 
     $$\boxed{E_n^{(1)} = \int \psi_n^{(0)*} H' \psi_n^{(0)} \, d\tau}$$
 
