@@ -21,10 +21,11 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 10px;
 }
 
@@ -35,7 +36,7 @@ nav ul li a {
 
 main {
   padding: 20px;
-  max-width: fit-content;
+  max-width: 100%;
   margin: 20px auto;
   background: #fff;
   border-radius: 8px;
@@ -54,6 +55,7 @@ footer {
 
 footer p {
   margin: 0;
+  text-align: center;
 }
 
 /* Code Blocks */
@@ -109,4 +111,25 @@ table th {
   color: #c00;
   border: 1px solid #c00;
   padding: 1px 3px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  table th, table td {
+    padding: 5px;
+  }
 }
