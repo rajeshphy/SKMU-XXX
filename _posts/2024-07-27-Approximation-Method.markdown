@@ -5,7 +5,7 @@ date:   2024-07-26 10:47:26 +0530
 categories: lecture
 ---
 
-## Time Independent Perturbation Theory: Non-degenerate Case
+### Time Independent Perturbation Theory: Non-degenerate Case
 
 Suppose we have a Hamiltonian 
 
