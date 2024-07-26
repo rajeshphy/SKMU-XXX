@@ -7,7 +7,7 @@ categories: lecture
 
 ## Time Independent Perturbation Theory: Non-degenerate Case
 
-- Suppose we have a Hamiltonian 
+Suppose we have a Hamiltonian 
 
 $$H = H_0 + \lambda H'$$
 
