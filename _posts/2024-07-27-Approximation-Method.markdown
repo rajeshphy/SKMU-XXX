@@ -66,6 +66,62 @@ where $$\lambda$$ is a small parameter. The Hamiltonian $$H_0$$ is the unperturb
 
 - The first order correction to the eigenfunctions is given by:
 
-    $$\psi_n^{(1)} = \sum_{m \neq n} \frac{\psi_m^{(0)*} H' \psi_n^{(0)}}{E_n^{(0)} - E_m^{(0)}}$$
+    $$\psi_n^{(1)} = \sum_{m \neq n} \frac{\int\psi_m^{(0)*} H' \psi_n^{(0)}d\tau}{E_n^{(0)} - E_m^{(0)}}\psi_m^{(0)}$$
 
     The first order correction to the eigenfunction can be calculated by using the fact that the eigenfunctions of $$H_0$$ are known and the matrix elements of $$H'$$ can be calculated. The first order correction to the eigenfunction is calculated by projecting the Schrödinger equation onto the state $$\psi_m^{(0)}$$ where $$m \neq n$$.
+
+### Time Independent Perturbation Theory: Degenerate Case
+
+In the degenerate case, we still have the Hamiltonian 
+
+$$H = H_0 + \lambda H'$$
+
+where $$ \lambda $$ is a small parameter. The unperturbed Hamiltonian $$ H_0 $$ has a set of degenerate eigenstates, meaning there are multiple eigenfunctions corresponding to the same eigenvalue $$ E_n^{(0)} $$.
+
+#### Problem Statement
+<span style="color: red;">The problem is to find the eigenvalues and eigenfunctions of the perturbed Hamiltonian $$ H $$ when the unperturbed Hamiltonian $$ H_0 $$ has degenerate eigenstates.</span>
+
+#### Approach
+For simplicity, assume that $$ H_0 $$ has a degenerate eigenvalue $$ E_n^{(0)} $$ with $$ g $$ degenerate states $$ \psi_{n,1}^{(0)}, \psi_{n,2}^{(0)}, \ldots, \psi_{n,g}^{(0)} $$. We need to account for the mixing of these degenerate states due to the perturbation $$ H' $$.
+
+#### Eigenvalue and Eigenfunction Expansions
+The eigenvalues and eigenfunctions of $$ H $$ can still be expanded in powers of $$ \lambda $$:
+
+$$E_n = E_n^{(0)} + \lambda E_n^{(1)} + \lambda^2 E_n^{(2)} + \cdots$$
+
+$$\psi_n = \psi_n^{(0)} + \lambda \psi_n^{(1)} + \lambda^2 \psi_n^{(2)} + \cdots$$
+
+However, now $$ \psi_n^{(0)} $$ is a linear combination of the degenerate states:
+
+$$\psi_n^{(0)} = \sum_{k=1}^{g} c_k \psi_{n,k}^{(0)}$$
+
+#### First Order Correction to the Eigenvalues
+To find the first order correction to the eigenvalues, we solve the secular equation by considering the matrix elements of $$ H' $$ in the subspace of the degenerate states:
+
+$$H'_{ij} = \langle \psi_{n,i}^{(0)} | H' | \psi_{n,j}^{(0)} \rangle$$
+
+We need to solve the eigenvalue problem for the matrix $$ H' $$ restricted to the degenerate subspace:
+
+$$\sum_{j=1}^{g} H'_{ij} c_j = E_n^{(1)} c_i$$
+
+This is equivalent to finding the eigenvalues and eigenvectors of the matrix $$ H' $$ in the degenerate subspace. The eigenvalues of this matrix are the first order corrections $$ E_n^{(1)} $$.
+
+#### First Order Correction to the Eigenfunctions
+Once the coefficients $$ c_i $$ are found by solving the secular equation, the first order correction to the eigenfunction $$ \psi_n^{(0)} $$ can be written as:
+
+$$\psi_n^{(1)} = \sum_{m \neq n} \frac{\langle \psi_m^{(0)} | H' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_m^{(0)}} \psi_m^{(0)}$$
+
+where $$ \psi_n^{(0)} = \sum_{k=1}^{g} c_k \psi_{n,k}^{(0)} $$.
+
+#### Summary
+1. **Solve the secular equation** for the degenerate subspace:
+
+   $$\sum_{j=1}^{g} H'_{ij} c_j = E_n^{(1)} c_i$$
+
+2. **Find the first order correction to the eigenvalues** by solving the eigenvalue problem for the matrix $$ H' $$ in the degenerate subspace.
+
+3. **Compute the first order correction to the eigenfunctions** using:
+
+   $$\psi_n^{(1)} = \sum_{m \neq n} \frac{\langle \psi_m^{(0)} | H' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_m^{(0)}} \psi_m^{(0)}$$
+
+   with $$ \psi_n^{(0)} $$ expressed as a linear combination of the degenerate states.
