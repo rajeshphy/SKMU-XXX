@@ -234,5 +234,5 @@ $$
 This result is known as Fermi's Golden Rule. Although named after Enrico Fermi, much of the foundational work was done by P.A.M. Dirac in an earlier study, who formulated a nearly identical equation involving a constant, the matrix element of the perturbation, and an energy difference.
  
 <div style="text-align: center;">
-    <img src="/SKMU/assets/img/Quantum/dirac.png" alt="dirac delta" class="my-custom-class" style="max-width:30%; height:20%;">
+    <img src="/SKMU/assets/img/Quantum/dirac.png" alt="dirac delta" class="my-custom-class" style="max-width:50%; height:60%;">
 </div>
