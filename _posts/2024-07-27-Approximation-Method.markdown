@@ -192,3 +192,47 @@ $$
 
 For a sinusoidal perturbation of the form $$ \hat{V}(t) = \hat{V}_0 \cos(\omega t) $$, this expression can be further simplified, leading to well-known results such as Fermi's Golden Rule for transition rates.
 
+---
+## Sudden Perturbation
+
+In exploring time-dependent perturbation theory, we consider the case of fast or "sudden" perturbations. A perturbation is deemed sudden if the transition from one time-independent Hamiltonian $$ \hat{H}_0 $$ to another $$ \hat{H}'_0 $$ occurs over a time much shorter than any natural period of the system. In such cases, perturbation theory becomes irrelevant. If the system is initially in an eigenstate $$ \ket{n} $$ of $$ \hat{H}_0 $$, its time evolution post-transition follows $$ \hat{H}'_0 $$. The initial state can then be expressed as a sum over the eigenstates of $$ \hat{H}'_0 $$:
+
+$$
+\ket{n} = \sum_{n'} \ket{n'} \bra{n'} n \rangle
+$$
+
+The key challenge is to ensure that the change is sudden enough, which is determined by estimating the actual time taken for the Hamiltonian to change and the periods of motion associated with the state $$ \ket{n} $$ and its transitions to neighboring states.
+
+### Harmonic Perturbations: Fermi’s Golden Rule
+
+Consider a system prepared in an initial state $$ \ket{i} $$ that is perturbed by a periodic harmonic potential $$ V(t) = V e^{-i\omega t} $$, which is abruptly switched on at $$ t = 0 $$. This scenario could represent an atom perturbed by an external oscillating electric field, like an incident light wave. We aim to determine the probability that at some later time $$ t $$, the system is found in state $$ \ket{f} $$.
+
+From first-order perturbation theory, the coefficient $$ c^{(1)}_f(t) $$ is given by:
+
+$$
+c^{(1)}_f(t) = -\frac{i}{\hbar} \int_{0}^{t} dt' \bra{f} V \ket{i} e^{i(\omega_{fi} - \omega)t'} = -\frac{i}{\hbar} \bra{f} V \ket{i} \frac{e^{i(\omega_{fi} - \omega)t} - 1}{i(\omega_{fi} - \omega)}
+$$
+
+The probability of the transition after time $$ t $$ is then:
+
+$$
+P_{i \to f}(t) = \left| c^{(1)}_f(t) \right|^2 = \frac{1}{\hbar^2} \left| \bra{f} V \ket{i} \right|^2 \left( \frac{\sin((\omega_{fi} - \omega)t/2)}{(\omega_{fi} - \omega)/2} \right)^2
+$$
+
+By setting $$ \alpha = (\omega_{fi} - \omega)/2 $$, the probability becomes:
+
+$$
+P_{i \to f}(t) = \frac{1}{\hbar^2} \left| \bra{f} V \ket{i} \right|^2 \frac{\sin^2(\alpha t)}{\alpha^2}
+$$
+
+As $$ t $$ approaches infinity, the function asymptotes to a delta function $$ \pi t \delta(\alpha) $$ as shown in figure below, indicating that the likelihood of transition is proportional to the time elapsed. To obtain the transition rate, we divide by $$ t $$:
+
+$$\boxed{
+R_{i \to f}(t) = \lim_{t \to \infty} \frac{P_{i \to f}(t)}{t} = \frac{2\pi}{\hbar^2} \left| \bra{f} V \ket{i} \right|^2 \delta(\omega_{fi} - \omega)}
+$$
+
+This result is known as Fermi's Golden Rule. Although named after Enrico Fermi, much of the foundational work was done by P.A.M. Dirac in an earlier study, who formulated a nearly identical equation involving a constant, the matrix element of the perturbation, and an energy difference.
+ 
+<div style="text-align: center;">
+    <img src="/SKMU/assets/img/Quantum/dirac.png" alt="dirac delta" class="my-custom-class" style="max-width:30%; height:20%;">
+</div>
