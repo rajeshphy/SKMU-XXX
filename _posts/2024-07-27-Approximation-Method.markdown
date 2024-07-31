@@ -125,3 +125,70 @@ where $$ \psi_n^{(0)} = \sum_{k=1}^{g} c_k \psi_{n,k}^{(0)} $$.
    $$\psi_n^{(1)} = \sum_{m \neq n} \frac{\langle \psi_m^{(0)} | H' | \psi_n^{(0)} \rangle}{E_n^{(0)} - E_m^{(0)}} \psi_m^{(0)}$$
 
    with $$ \psi_n^{(0)} $$ expressed as a linear combination of the degenerate states.
+
+
+---
+
+# Time-Dependent Perturbation Theory
+
+
+Time-Dependent Perturbation Theory is an essential tool in quantum mechanics used to study systems under the influence of a time-varying external force or potential. It provides a way to calculate the probabilities of transitions between different quantum states over time.
+
+## Basic Concept
+
+Consider a quantum system described by a time-independent Hamiltonian $$ \hat{H}_0 $$ with known eigenstates $ \ket{n} $ and corresponding energies $$ E_n $$:
+
+$$
+\hat{H}_0 \ket{n} = E_n \ket{n}
+$$
+
+When a time-dependent perturbation $$ \hat{V}(t) $$ is applied to the system, the total Hamiltonian becomes:
+
+$$
+\hat{H}(t) = \hat{H}_0 + \hat{V}(t)
+$$
+
+The perturbation $$ \hat{V}(t) $$ is assumed to be small, so it induces transitions between the eigenstates of $$ \hat{H}_0 $$.
+
+## Perturbation Expansion
+
+The state of the system $$ \ket{\Psi(t)} $$ evolves according to the Schrödinger equation:
+
+$$
+i\hbar \frac{\partial}{\partial t} \ket{\Psi(t)} = \hat{H}(t) \ket{\Psi(t)}
+$$
+
+We express the state $$ \ket{\Psi(t)}$$ as a superposition of the unperturbed eigenstates:
+
+$$
+\ket{\Psi(t)}= \sum_n c_n(t) e^{-iE_n t/\hbar}\ket{n}
+$$
+
+Here, $$ c_n(t) $$ are the time-dependent coefficients that give the probability amplitude for the system to be in state $$\ket{n} $$ at time $$ t $$.
+
+## First-Order Approximation
+
+In the first-order approximation, the change in the coefficients $$ c_n(t) $$ is given by:
+
+$$
+c_n^{(1)}(t) = -\frac{i}{\hbar} \int_{t_0}^{t} \langle n|\hat{V}(t')|\Psi(t')\rangle e^{iE_n t'/\hbar} dt'
+$$
+
+If the system starts in state $$\ket{m} $$ at $$ t_0 $$, we have:
+
+$$
+c_n^{(1)}(t) = -\frac{i}{\hbar} \int_{t_0}^{t} \bra{n}\hat{V}(t')\ket{m} e^{i(E_n-E_m)t'/\hbar} dt'
+$$
+
+This integral allows us to calculate the probability of the system transitioning from state $$ \ket{m} $$ to state $$ \ket{n} $$ due to the perturbation.
+
+## Transition Probability
+
+The probability of the system being found in state $$\ket{n}$$ at time $$ t $$ is given by $$ P_{m \to n}(t) $$:
+
+$$
+P_{m \to n}(t) = |c_n^{(1)}(t)|^2
+$$
+
+For a sinusoidal perturbation of the form $$ \hat{V}(t) = \hat{V}_0 \cos(\omega t) $$, this expression can be further simplified, leading to well-known results such as Fermi's Golden Rule for transition rates.
+
