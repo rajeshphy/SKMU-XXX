@@ -13,3 +13,9 @@ categories: lecture
 - [Scattering Theory - B.Zwiebach](/SKMU/assets/pdf/Scattering-MIT.pdf)
 
 - [Nine Formulation Of Quantum Mechanics -Daniel F. Styer](/SKMU/assets/pdf/None-Formulation-QM.pdf)
+
+- [Frequently Used Mathematical Formula](/SKMU/assets/pdf/Math-Formulae.pdf)
+
+- [Variational Principle](/SKMU/assets/pdf/QM-Variational.pdf)
+
+- [Postulates Of QM](/SKMU/assets/pdf/QM-Postulates.pdf)
