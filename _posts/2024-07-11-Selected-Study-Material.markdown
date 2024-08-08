@@ -20,3 +20,5 @@ categories: lecture
 - **[Frequently Used Mathematical Formula](/SKMU/assets/pdf/Math-Formulae.pdf)**
 
 - **[Frequently Used Quantum Mechanics Formula](/SKMU/assets/pdf/QM-Formulae.pdf)**
+
+- [Statistical Mechanics Formula](/SKMU/assets/pdf/Statistical-Formulae.pdf)
