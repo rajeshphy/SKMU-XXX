@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Selected Study Material"
-date:   2024-07-11 10:47:26 +0530
+title:  "**Selected Study Material**"
+date:   2024-08-09 10:47:26 +0530
 categories: lecture
 ---
 
