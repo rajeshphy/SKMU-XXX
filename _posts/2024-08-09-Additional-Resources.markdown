@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "**Selected Study Material**"
+title:  "*Additional Resources*"
 date:   2024-08-09 10:47:26 +0530
 categories: lecture
 ---
